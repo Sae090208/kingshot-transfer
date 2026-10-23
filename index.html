@@ -2,308 +2,448 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#10131b">
-  <meta name="description" content="Apply to join KingShot Server 26. Meet the community and submit your transfer application.">
-  <title>KingShot | Server 26 Recruitment</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080910">
+<meta name="description" content="MYTHIC Alliance — KingShot Server 26. Apply to join our legendary alliance.">
+<title>MYTHIC | KingShot Server 26</title>
 
-  <style>
-    :root {
-      --gold: #f3c969;
-      --dark: #10131b;
-      --panel: #191e29;
-      --muted: #b5bdcc;
-      --line: #343b4b;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #f7f8fb;
-      background:
-        radial-gradient(ellipse at top, #30364a 0%, #10131b 65%);
-      line-height: 1.7;
-    }
-
-    a { color: inherit; }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(16, 19, 27, .96);
-      border-bottom: 1px solid var(--line);
-      padding: 16px 7%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
-    }
-
-    .brand {
-      color: var(--gold);
-      font-weight: 900;
-      letter-spacing: 1.2px;
-    }
-
-    nav a {
-      color: var(--muted);
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
-    }
-
-    nav a:hover { color: var(--gold); }
-
-    main {
-      max-width: 1080px;
-      margin: auto;
-      padding: 30px 20px 60px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 75px 10px 65px;
-    }
-
-    .tag {
-      display: inline-block;
-      color: var(--gold);
-      border: 1px solid #78663c;
-      border-radius: 30px;
-      padding: 5px 14px;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 1.4px;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: clamp(40px, 8vw, 76px);
-      line-height: 1.05;
-      margin: 24px 0;
-      letter-spacing: -1px;
-    }
-
-    h1 span, .gold { color: var(--gold); }
-
-    .hero p {
-      max-width: 660px;
-      margin: 0 auto 28px;
-      color: var(--muted);
-      font-size: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--gold);
-      color: #171717;
-      text-decoration: none;
-      font-weight: 800;
-      padding: 13px 22px;
-      border-radius: 8px;
-      margin: 5px;
-      transition: transform .2s, filter .2s;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-      filter: brightness(1.08);
-    }
-
-    .button.secondary {
-      color: var(--gold);
-      background: transparent;
-      border: 1px solid #78663c;
-    }
-
-    section { margin: 30px 0 45px; }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 22px;
-    }
-
-    .section-title p { color: var(--muted); }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 17px;
-    }
-
-    .card {
-      background: rgba(25, 30, 41, .95);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 25px;
-    }
-
-    .card h3 { margin-top: 0; }
-
-    .card p { color: var(--muted); }
-
-    .server-number {
-      color: var(--gold);
-      font-size: clamp(55px, 10vw, 85px);
-      font-weight: 900;
-      line-height: 1.2;
-      margin: 10px 0;
-    }
-
-    .server-card {
-      text-align: center;
-      padding: 38px 20px;
-      border-color: #78663c;
-      background: linear-gradient(135deg, #202638, #191e29);
-    }
-
-    .apply {
-      text-align: center;
-      padding: 45px 20px;
-      border-color: #78663c;
-      background: linear-gradient(145deg, #242a39, #191e29);
-    }
-
-    .apply p {
-      color: var(--muted);
-      max-width: 600px;
-      margin: 15px auto 25px;
-    }
-
-    .note {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      text-align: center;
-      padding: 25px 15px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      header { padding: 14px 5%; }
-      nav a { margin-left: 10px; }
-      .brand { font-size: 13px; }
-      main { padding: 20px 15px 40px; }
-      .hero { padding: 55px 5px 45px; }
-    }
-  </style>
+<style>
+:root {
+  --gold: #f4d28a;
+  --gold2: #b9893e;
+  --bg: #080910;
+  --panel: rgba(20,21,32,.88);
+  --muted: #a5a7b8;
+  --line: rgba(244,210,138,.19);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #f6f2e9;
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(140,91,35,.20), transparent 55%),
+    radial-gradient(ellipse at 0% 55%, rgba(49,47,100,.13), transparent 40%),
+    radial-gradient(ellipse at 100% 80%, rgba(138,91,36,.10), transparent 40%);
+}
+a { color: inherit; }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 7%;
+  gap: 15px;
+  background: rgba(8,9,16,.90);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(15px);
+}
+.logo {
+  font-family: Cinzel, Georgia, serif;
+  color: var(--gold);
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-size: 21px;
+}
+.logo small {
+  display: block;
+  font: 10px Inter, sans-serif;
+  letter-spacing: 3px;
+  color: var(--muted);
+  text-align: center;
+}
+nav { display: flex; align-items: center; gap: 24px; }
+nav a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #d4d0c8;
+  text-decoration: none;
+  transition: color .2s;
+}
+nav a:hover { color: var(--gold); }
+.nav-apply {
+  padding: 9px 15px;
+  border: 1px solid var(--gold2);
+  border-radius: 4px;
+}
+main { max-width: 1180px; padding: 0 22px; margin: auto; }
+.hero {
+  min-height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 95px 0 90px;
+}
+.hero::before {
+  content: "✦";
+  position: absolute;
+  top: 85px;
+  font-size: 170px;
+  color: rgba(244,210,138,.035);
+  pointer-events: none;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold);
+  border: 1px solid var(--line);
+  background: rgba(244,210,138,.045);
+  padding: 8px 16px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.eyebrow::before, .eyebrow::after { content: "✧"; }
+h1, h2, h3 { font-family: Cinzel, Georgia, serif; }
+h1 {
+  font-size: clamp(56px, 10vw, 112px);
+  letter-spacing: 7px;
+  line-height: 1;
+  margin: 28px 0 14px;
+  font-weight: 900;
+  text-shadow: 0 0 45px rgba(244,210,138,.14);
+}
+.gold-text {
+  display: block;
+  background: linear-gradient(110deg, #fff0c4 0%, #e5b95f 42%, #fff0c4 70%, #a87732 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.subtitle {
+  color: var(--gold);
+  letter-spacing: 7px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.hero p {
+  max-width: 640px;
+  color: var(--muted);
+  font-size: 16px;
+  margin: 25px auto 30px;
+}
+.actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 23px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  transition: .25s ease;
+}
+.btn-primary {
+  color: #17120a;
+  background: linear-gradient(110deg, #f9e4ae, #c29347);
+  box-shadow: 0 5px 30px rgba(196,145,63,.14);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 35px rgba(196,145,63,.28); }
+.btn-outline { color: var(--gold); border: 1px solid var(--line); background: rgba(255,255,255,.015); }
+.btn-outline:hover { border-color: var(--gold); background: rgba(244,210,138,.06); }
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--gold2);
+  margin: 0 auto 22px;
+  max-width: 330px;
+  font-size: 13px;
+}
+.divider::before, .divider::after { content: ""; height: 1px; flex: 1; background: var(--line); }
+.section { padding: 42px 0 70px; }
+.section-heading { text-align: center; margin-bottom: 32px; }
+.section-heading .kicker {
+  color: var(--gold2);
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+.section-heading h2 {
+  font-size: clamp(27px, 5vw, 42px);
+  margin: 8px 0;
+  letter-spacing: 2px;
+}
+.section-heading p { color: var(--muted); font-size: 14px; }
+.server-panel {
+  border: 1px solid rgba(244,210,138,.3);
+  background:
+    linear-gradient(115deg, rgba(32,29,28,.95), rgba(16,17,27,.95)),
+    var(--panel);
+  text-align: center;
+  padding: 45px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.server-panel::before, .server-panel::after {
+  content: "✧";
+  position: absolute;
+  color: rgba(244,210,138,.14);
+  font-size: 130px;
+  top: 12px;
+}
+.server-panel::before { left: 6%; }
+.server-panel::after { right: 6%; }
+.server-label {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+.server-number {
+  font-family: Cinzel, Georgia, serif;
+  font-size: clamp(70px, 12vw, 110px);
+  line-height: 1.2;
+  font-weight: 900;
+  background: linear-gradient(#fff0c4, #b9893e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.server-panel h2 { letter-spacing: 3px; margin: 0; }
+.server-panel p { color: var(--muted); margin-bottom: 0; font-size: 13px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+.card {
+  background: linear-gradient(145deg, rgba(25,26,39,.96), rgba(13,14,22,.96));
+  border: 1px solid var(--line);
+  padding: 27px;
+  transition: transform .25s, border-color .25s;
+}
+.card:hover { transform: translateY(-5px); border-color: rgba(244,210,138,.55); }
+.card-icon {
+  font-size: 25px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 9px rgba(244,210,138,.22));
+}
+.card h3 { font-size: 17px; color: var(--gold); margin: 0 0 10px; letter-spacing: .5px; }
+.card p { font-size: 13px; color: var(--muted); margin: 0; }
+.steps { counter-reset: step; }
+.step { position: relative; padding-top: 23px; }
+.step::before {
+  counter-increment: step;
+  content: "0" counter(step);
+  display: block;
+  font-family: Cinzel, Georgia, serif;
+  font-size: 28px;
+  color: var(--gold2);
+  margin-bottom: 13px;
+}
+.requirements {
+  border: 1px solid var(--line);
+  padding: 25px;
+  background: rgba(20,21,32,.7);
+}
+.requirements ul { padding-left: 20px; color: var(--muted); font-size: 14px; }
+.requirements li { margin: 8px 0; }
+.requirements li::marker { color: var(--gold); }
+.apply-panel {
+  text-align: center;
+  padding: 58px 22px;
+  border: 1px solid rgba(244,210,138,.35);
+  background:
+    radial-gradient(ellipse at center, rgba(130,91,38,.16), transparent 68%),
+    linear-gradient(135deg, #1b1b27, #0d0e16);
+  position: relative;
+}
+.apply-panel h2 {
+  font-size: clamp(28px, 5vw, 43px);
+  letter-spacing: 2px;
+  margin: 18px 0 10px;
+}
+.apply-panel p { max-width: 600px; margin: 0 auto 25px; color: var(--muted); font-size: 14px; }
+.fine-print { font-size: 11px !important; margin-top: 18px !important; }
+footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 20px;
+  text-align: center;
+  color: #777b8d;
+  font-size: 11px;
+  letter-spacing: .5px;
+}
+footer strong { display: block; color: var(--gold2); font-family: Cinzel, Georgia, serif; font-size: 16px; letter-spacing: 3px; margin-bottom: 5px; }
+@media(max-width: 760px) {
+  header { padding: 13px 5%; }
+  .logo { font-size: 16px; letter-spacing: 2px; }
+  nav { gap: 12px; }
+  nav a { font-size: 10px; }
+  .grid { grid-template-columns: 1fr; }
+  .hero { min-height: 570px; padding: 65px 0; }
+  h1 { letter-spacing: 3px; }
+  .subtitle { letter-spacing: 4px; }
+  .server-panel::before { left: -30px; }
+  .server-panel::after { right: -30px; }
+}
+@media(max-width: 430px) {
+  .logo small { letter-spacing: 1px; }
+  nav a:not(.nav-apply) { display: none; }
+  main { padding-left: 15px; padding-right: 15px; }
+  .btn { width: 100%; }
+}
+@media(prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+</style>
 </head>
 
 <body>
-  <header>
-    <div class="brand">⚔ KINGSHOT TRANSFERS</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#requirements">Requirements</a>
-      <a href="#apply">Apply</a>
-    </nav>
-  </header>
+<header>
+  <a href="#" style="text-decoration:none">
+    <div class="logo">MYTHIC<small>KINGSHOT · SERVER 26</small></div>
+  </a>
+  <nav>
+    <a href="#about">ALLIANCE</a>
+    <a href="#requirements">JOIN US</a>
+    <a class="nav-apply" href="#apply">APPLY ↗</a>
+  </nav>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="tag">Recruitment Portal</div>
-      <h1>YOUR NEXT<br><span>CHAPTER STARTS HERE.</span></h1>
+<main>
+  <section class="hero">
+    <div class="eyebrow">A New Era Begins</div>
+    <h1><span class="gold-text">MYTHIC</span></h1>
+    <div class="subtitle">KINGSHOT · SERVER 26</div>
+    <div class="divider">✦ ✦ ✦</div>
+    <p>
+      Legends are not born alone. They rise together.
+      Join MYTHIC, bring your strength, and become part of
+      a community built on teamwork, ambition, and loyalty.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#apply">⚔ Apply to MYTHIC</a>
+      <a class="btn btn-outline" href="#about">Discover Our Alliance ↓</a>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="server-panel">
+      <div class="server-label">YOUR NEXT DESTINATION</div>
+      <div class="server-number">26</div>
+      <h2>SERVER TWENTY-SIX</h2>
+      <p>MYTHIC ALLIANCE · KINGSHOT</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div class="kicker">The MYTHIC Standard</div>
+      <h2>MORE THAN AN ALLIANCE</h2>
+      <p>Strength matters. Unity makes us unstoppable.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card-icon">⚔️</div>
+        <h3>Battle Together</h3>
+        <p>Coordinate rallies, fight strategically, and stand with your teammates when it matters most.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">♛</div>
+        <h3>Grow Stronger</h3>
+        <p>Build your account, learn from one another, and help the alliance move forward.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">✦</div>
+        <h3>One Community</h3>
+        <p>Respect, communication, activity, and teamwork are the foundation of our alliance.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="requirements">
+    <div class="section-heading">
+      <div class="kicker">Your Journey Begins</div>
+      <h2>HOW TO JOIN MYTHIC</h2>
+      <p>Three simple steps between you and your next chapter.</p>
+    </div>
+
+    <div class="grid steps">
+      <article class="card step">
+        <h3>Submit Your Details</h3>
+        <p>Complete the application form with your in-game name, power, server, and activity.</p>
+      </article>
+      <article class="card step">
+        <h3>Recruitment Review</h3>
+        <p>Our recruitment team reviews your information and considers your application.</p>
+      </article>
+      <article class="card step">
+        <h3>Prepare for Transfer</h3>
+        <p>If accepted, coordinate with our team and check in-game transfer eligibility and availability.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="requirements">
+      <h3 class="gold" style="font-family:Cinzel,Georgia,serif">BEFORE YOU APPLY</h3>
+      <ul>
+        <li>Enter accurate account and server information.</li>
+        <li>Tell us honestly about your activity and event participation.</li>
+        <li>Be ready to communicate and work as part of a team.</li>
+        <li>Transfer acceptance depends on recruitment decisions and in-game rules.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="apply">
+    <div class="apply-panel">
+      <div class="eyebrow">Recruitment Portal</div>
+      <h2>YOUR LEGEND STARTS HERE.</h2>
       <p>
-        Looking for an active community, organized battles, and teammates
-        who stand together? Make your next move and apply to join
-        KingShot Server 26!
+        Think you belong among the MYTHIC ranks?
+        Submit your application and introduce yourself to our recruitment team.
       </p>
-      <a class="button" href="#apply">APPLY FOR TRANSFER ↗</a>
-      <a class="button secondary" href="#about">DISCOVER SERVER 26</a>
-    </section>
-
-    <section class="card server-card">
-      <div class="tag">Your Target Server</div>
-      <div class="server-number">#26</div>
-      <h2>WELCOME TO SERVER 26</h2>
-      <p>One community. One team. A stronger future together.</p>
-    </section>
-
-    <section id="about">
-      <div class="section-title">
-        <h2>WHY JOIN US?</h2>
-        <p>We value teamwork, activity, and respect.</p>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3 class="gold">⚔ Organized Battles</h3>
-          <p>Coordinate with teammates for rallies, fortresses, and major server events.</p>
-        </div>
-
-        <div class="card">
-          <h3 class="gold">🤝 Team First</h3>
-          <p>Communication, loyalty, and helping teammates grow matter to us.</p>
-        </div>
-
-        <div class="card">
-          <h3 class="gold">🔥 Active Players</h3>
-          <p>We welcome players who participate, stay engaged, and contribute to the community.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="requirements">
-      <div class="section-title">
-        <h2>TRANSFER APPLICATION</h2>
-        <p>Help our recruitment team learn more about you.</p>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3 class="gold">01. Your Account</h3>
-          <p>Share your in-game name, current server, power, and troop tier.</p>
-        </div>
-
-        <div class="card">
-          <h3 class="gold">02. Your Activity</h3>
-          <p>Tell us about your event participation and how active you are.</p>
-        </div>
-
-        <div class="card">
-          <h3 class="gold">03. Review</h3>
-          <p>Submit your application and wait for the recruitment team to respond.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="card apply" id="apply">
-      <div class="tag">Applications Open</div>
-      <h2>READY TO JOIN SERVER 26?</h2>
-      <p>
-        Take the first step. Complete the recruitment form with accurate
-        details so our team can review your application.
-      </p>
-
       <a
-        class="button"
+        class="btn btn-primary"
         href="https://forms.gle/bkcbrkuWnd7SeBi27"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        COMPLETE APPLICATION ↗
-      </a>
-
-      <p class="note">
-        The application opens in Google Forms in a new tab.
-        Submitting an application does not guarantee a transfer slot.
+      >COMPLETE APPLICATION ↗</a>
+      <p class="fine-print">
+        Your application opens in Google Forms. Submission does not guarantee
+        acceptance or an available transfer slot.
       </p>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
-  <footer>
-    <p>KingShot Server 26 · Transfer Recruitment Portal</p>
-    <p>Fan-made community website. Not affiliated with the official game publisher.</p>
-  </footer>
+<footer>
+  <strong>MYTHIC</strong>
+  KINGSHOT · SERVER 26<br>
+  <p>Forged in unity. Remembered in legend.</p>
+  <p>Fan-made alliance recruitment website. Not an official KingShot website.</p>
+</footer>
 </body>
 </html>
